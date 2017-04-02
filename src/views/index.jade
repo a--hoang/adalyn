@@ -1,6 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p We are going to win this competition
-  
+  h1 Adalyn Control Panel
+  p We are going to win this competition.
+  div(class='control')
+    div(class='btn-separator')
+      button(id='btn-up') Forward
+    div(class='btn-separator')
+      button(id='btn-left') Left
+      button(id='btn-right') Right
+    div(class='btn-separator')
+      button(id='btn-down') Back
