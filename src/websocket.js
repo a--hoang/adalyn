@@ -10,10 +10,10 @@ module.exports = function (wss) {
           motor.up()
         break;
         case 'left':
-          motor.left()
+          motor.up()
         break;
         case 'right':
-          motor.right()
+          motor.up()
         break;
         case 'down':
           motor.down()
