@@ -1,8 +1,5 @@
 
-module.exports = function (server, wss) {
-  server.listen(process.env.WS_PORT, function listening () {
-    console.log('Listening on %d', server.address().port)
-  })
+module.exports = function (wss) {
   wss.on('connection', function connection (ws) {
     // Incoming protocol
     ws.on('message', function incoming (message) {

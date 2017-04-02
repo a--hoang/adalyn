@@ -4,17 +4,10 @@ var path = require('path')
 var logger = require('morgan')
 var cookieParser = require('cookie-parser')
 var bodyParser = require('body-parser')
-var http = require('http')
-var WebSocket = require('ws')
 
 var routes = require('./routes/index')
 
 var app = express()
-var server = http.createServer(app)
-var wss = new WebSocket.Server({ server })
-
-// Setup websocket server
-require('./websocket')(server, wss)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
